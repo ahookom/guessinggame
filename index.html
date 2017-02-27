@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+
+  <body id='app'>
+
+      <div class="center container-fluid">
+
+        <div id='headers'>
+          <!-- Title and subtitles! -->
+          <h1>Guessing Game</h1>
+          <h3 id='intro'>Let's Play!</h3>
+          <h5 id="display">You guess a number between 1 and 100. I'll let you know how close you are to being correct. If you can guess the correct number within 5 guesses, you win!</h5>
+        </div>
+
+        <div id='main'>
+          <div id='parent-input'>
+            <!-- Player's guess input, and submit button -->
+            <input id ="player-input" class="btn-lg.round" type="number" name="guess" autofocus=autofocus placeholder="#"></input>
+            <button id="submit" class="btn btn-primary" type="submit">Go!</button>         
+          </div>
+
+          <div id='guesses'>
+            <!-- unordered list of guesses -->
+            <p>Here are your guesses so far: </p>
+                <div>
+                <ul>
+                    <li class="guess">-</li>
+                    <li class="guess">-</li>
+                    <li class="guess">-</li>
+                    <li class="guess">-</li>      
+                </ul>
+                </div>
+          </div>
+
+          <div id="menu-btns" class="btn-group btn-group-sm">
+            <!-- reset and hint buttons -->
+            <button id= "reset" type="reset" class="btn btn-warning">Reset</button>
+            <button id='hint' type="button" class="btn btn-info" onclick="doSomething()">Give me a hint!</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    <div id='footer'class='center'>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class='col-xs-4'>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-xs-4'>
+            <h4 class=''>Project by Andrew Hookom</h4>
+          </div>
+
+          <div class='col-xs-4'>
+            <img class='' src='grace_hopper_academy.png'></img>
+          </div>
+       </div>
+
+     </div>
+
+   </div>
+   <script src="jquery-3.1.1.js"></script>
+   <script src="GuessingGame.js"></script>
+   <script src="application.js"></script>
+  </body>
+
+ 
+</html>
