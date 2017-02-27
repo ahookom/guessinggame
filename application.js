@@ -36,5 +36,6 @@ $(document).ready(function(){
         var arr=game.provideHint();
         var disp=arr.join(', ');
         display("It's one of these numbers: "+disp);
+        $('#hint').prop("disabled",true);
     });
 });
