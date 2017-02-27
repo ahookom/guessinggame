@@ -6,7 +6,7 @@ h1 {
 }
 
 #app{
-    background-color:rgba(0,75,72,.5);
+    background-color:rgba(0,30,72,.5);
 }
 
 #parent-input {
@@ -35,6 +35,15 @@ h1 {
     position: relative;
     top:125px;
     left:80px;
+    color:black;
+}
+
+#hint {
+    color:black;
+}
+
+#reset {
+    color:black;
 }
 
 ul {
